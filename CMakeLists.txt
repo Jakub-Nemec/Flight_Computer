@@ -14,4 +14,3 @@ add_executable(Flight_Computer src/main.cpp
         src/Control/Controller.h
         src/Logging/Logger.cpp
         src/Logging/Logger.h)
-

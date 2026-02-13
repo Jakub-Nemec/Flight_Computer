@@ -23,7 +23,7 @@ void Scheduler::run() {
             m_overrun_detected = true;
             std::cerr << "[SCHEDULER WARNING] Callback overrun detected! "
                       << "Execution time: " << execution_time.count() << "ms, "
-                      << "Period: " << m_period.count() << "ms" << std::endl;
+                      << "Period: " << m_period.count() << "µs" << std::endl;
         }
         
         // Track max execution time for monitoring
@@ -50,8 +50,7 @@ void Scheduler::run() {
                 
                 std::cerr << "[SCHEDULER ERROR] Critical delay detected! "
                           << "Skipping " << periods_to_skip << " cycles. "
-                          << "Delay: " << delay.count() << "ms" << std::endl;
-
+                          << "Delay: " << delay.count() << "µs" << std::endl;
             }
         }
         
