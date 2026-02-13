@@ -20,4 +20,5 @@ private:
     
     // Bounded catch-up: max delay before skipping cycles (default: 5 periods)
     static constexpr int MAX_CATCHUP_PERIODS = 5;
+
 };
