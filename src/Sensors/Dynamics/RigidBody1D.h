@@ -20,7 +20,17 @@ public:
 	// Return current angular velocity (rad/s)
 	double getAngularVelocity() const;
 
+	// Set initial angular velocity (for testing)
+	void setAngularVelocity(double omega);
+
+	// Return current angle (rad)
+	double getAngle() const;
+
+	// Set initial angle (for testing)
+	void setAngle(double angle);
+
 private:
+	double m_angle = 0.0;
 	double m_angularVelocity = 0.0;
 	double m_momentOfInertia = 1.0;
 	double m_appliedTorque = 0.0;

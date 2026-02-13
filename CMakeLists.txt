@@ -12,7 +12,10 @@ add_executable(Flight_Computer src/main.cpp
         src/Sensors/GyroSensor.h
         src/Control/Controller.cpp
         src/Control/Controller.h
+        src/Control/PIDController.cpp
+        src/Control/PIDController.h
         src/Logging/Logger.cpp
         src/Logging/Logger.h
         src/Sensors/Dynamics/RigidBody1D.cpp
-        src/Sensors/Dynamics/RigidBody1D.h)
+        src/Sensors/Dynamics/RigidBody1D.h
+        src/Control/PIDController.cpp)

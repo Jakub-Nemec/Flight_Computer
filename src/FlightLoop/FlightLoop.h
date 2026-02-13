@@ -3,6 +3,7 @@
 #include <cstdint>
 #include "../Sensors/Dynamics/RigidBody1D.h"
 #include "../Sensors/GyroSensor.h"
+#include "../Control/PIDController.h"
 
 class FlightLoop {
 public:
@@ -13,4 +14,5 @@ private:
     std::uint64_t m_tickCounter = 0;
     RigidBody1D m_body;
     GyroSensor m_gyro;
+    PIDController m_controller;
 };
