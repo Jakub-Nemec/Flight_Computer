@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(Flight_Computer src/main.cpp
         src/Scheduler/Scheduler.h
         src/Scheduler/Scheduler.cpp
+        src/FlightLoop/FlightLoop.h
+        src/FlightLoop/FlightLoop.cpp
         src/Sensors/GyroSensor.cpp
         src/Sensors/GyroSensor.h
         src/Control/Controller.cpp
