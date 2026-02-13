@@ -1,24 +1,26 @@
-Flight Computer Simulator
+# Flight Computer Simulator
 
 Modular C++ simulation of a small satellite flight computer.
 Designed with real-time scheduling principles and embedded systems mindset.
 
-Current Features
+## Current Features
 
-- Bullet points:
+**Bullet points:**
 - High-precision scheduler (microsecond resolution)
 - Overrun detection
 - Bounded catch-up mechanism
 - Modular architecture (Scheduler / FlightLoop separation)
 
-Architecture Overview
+## Architecture Overview
+```
 main
 ↓
 Scheduler (100 Hz)
 ↓
 FlightLoop
+```
+## Roadmap
 
-Roadmap
 - [x] Core scheduler
 - [ ] Gyro sensor simulation
 - [ ] Attitude controller (PID)

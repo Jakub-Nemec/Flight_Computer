@@ -22,7 +22,7 @@ void Scheduler::run() {
         if (execution_time > m_period) {
             m_overrun_detected = true;
             std::cerr << "[SCHEDULER WARNING] Callback overrun detected! "
-                      << "Execution time: " << execution_time.count() << "ms, "
+                      << "Execution time: " << execution_time.count() << "µs, "
                       << "Period: " << m_period.count() << "µs" << std::endl;
         }
         
